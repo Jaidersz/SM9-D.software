@@ -7,6 +7,9 @@ app.use(express.json());
 const studentsRoute = require("./routes/students");
 app.use("/students", studentsRoute);
 
+const coursesRoute = require("./routes/courses");
+app.use("/courses", coursesRoute);
+
 app.listen(port, () => {
   console.log(`Server running at http://localhost:${port}`);
 });
